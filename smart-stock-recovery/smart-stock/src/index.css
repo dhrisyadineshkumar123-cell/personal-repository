@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #090a0f;
+  --foreground: #e2e8f0;
+  --card: rgba(15, 23, 42, 0.4);
+  --primary: #8b5cf6; /* Neon Purple */
+  --primary-foreground: #ffffff;
+  --secondary: rgba(30, 41, 59, 0.5);
+  --muted: rgba(30, 41, 59, 0.4);
+  --muted-foreground: #94a3b8;
+  --destructive: #ef4444;
+  --border: rgba(148, 163, 184, 0.1);
+  --success: #10b981; /* Neon Emerald */
+  --warning: #f59e0b; /* Neon Amber */
+  --info: #3b82f6; /* Neon Blue */
+  --critical: #ef4444; /* Neon Red */
+  
+  --sidebar-bg: rgba(10, 15, 30, 0.6);
+  --sidebar-fg: #cbd5e1;
+  --sidebar-primary: #8b5cf6;
+  --sidebar-accent: rgba(139, 92, 246, 0.1);
+  --sidebar-border: rgba(148, 163, 184, 0.05);
+}
+
+body {
+  background-color: var(--background);
+  background-image: 
+    radial-gradient(circle at 15% 50%, rgba(139, 92, 246, 0.15), transparent 25%),
+    radial-gradient(circle at 85% 30%, rgba(16, 185, 129, 0.15), transparent 25%);
+  background-attachment: fixed;
+  color: var(--foreground);
+  font-family: 'Inter', sans-serif;
+  min-height: 100vh;
+}
+
+.font-display {
+  font-family: 'Space Grotesk', sans-serif;
+}
